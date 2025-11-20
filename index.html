@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
+    <title>Rock | Paper | Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="loadGame()">
+    <div id="player-names" class="player-names">
+        <h2>Enter Player Names</h2>
+        <div class="input-group">
+            <label for="player1">Player 1 Name:</label>
+            <input type="text" id="player1" placeholder="Enter Player 1 name">
+        </div>
+        <div class="input-group">
+            <label for="player2">Player 2 Name:</label>
+            <input type="text" id="player2" placeholder="Enter Player 2 name">
+        </div>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    
+    <div id="game-container" class="container" style="display: none;">
+        <div class="left">
+            <div id="player1-name" class="player-name"></div>
+            <div id="player1-score" class="player-score">Score: 0</div>
+            <span id="op-1" class="option">&#9994;</span>
+            <span id="op-2" class="option">&#9995;</span>
+            <span id="op-3" class="option">&#9996;</span>
+        </div>
+        <div class="right">
+            <div id="player2-name" class="player-name"></div>
+            <div id="player2-score" class="player-score">Score: 0</div>
+            <span id="op-4" class="option">&#9994;</span>
+            <span id="op-5" class="option">&#9995;</span>
+            <span id="op-6" class="option">&#9996;</span>
+        </div>
+    </div>
+    <div class="bottom" style="display: none;">
+        <button onclick="play()">Start</button>
+    </div>
+    
+    <!-- Congratulation Message -->
+    <div id="congrats-message" class="congrats-message">
+        <div class="congrats-content">
+            <h1 id="winner-text">Congratulations!</h1>
+            <p id="winner-name"></p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>

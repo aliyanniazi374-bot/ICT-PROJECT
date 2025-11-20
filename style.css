@@ -1,0 +1,171 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(249, 228, 255);
+    font-family: "Silkscreen", sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 75vh;
+    align-items: center;
+}
+
+.option{
+    font-size: 256px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.left, .right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.player-score {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #a020f0;
+}
+
+.bottom button{
+    border-color: transparent;
+    font-family: "Silkscreen";
+    width: 100%;
+    max-width: 256px;
+    box-shadow: 0 3px 10px #A020F0;
+    height: 200px;
+    width: 200px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #a020f0;
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bottom button:hover{
+    box-shadow: none;
+    width: 250px;
+    height: 250px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.player-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 18px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #a020f0;
+    border-radius: 5px;
+    font-family: "Silkscreen";
+    text-align: center;
+}
+
+.player-names button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #a020f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Silkscreen";
+}
+
+.player-names button:hover {
+    background-color: #8a1ed4;
+}
+
+/* Congratulation Message Styles */
+.congrats-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(160, 32, 240, 0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.congrats-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 80%;
+}
+
+.congrats-content h1 {
+    color: #a020f0;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.congrats-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.congrats-content button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #a020f0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Silkscreen";
+    transition: all 0.3s ease;
+}
+
+.congrats-content button:hover {
+    background-color: #8a1ed4;
+    transform: scale(1.05);
+}
